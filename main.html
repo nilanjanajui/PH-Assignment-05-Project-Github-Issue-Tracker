@@ -50,7 +50,8 @@
                     Search
                 </button>
 
-                <button class="bg-[#4A00FF] text-white px-4 py-2 rounded-md mousehover:bg-[#3a00cc] transition-colors hover:bg-[#3a00cc] cursor-pointer">
+                <button
+                    class="bg-[#4A00FF] text-white px-4 py-2 rounded-md mousehover:bg-[#3a00cc] transition-colors hover:bg-[#3a00cc] cursor-pointer">
                     + New Issue
                 </button>
 
@@ -205,6 +206,17 @@
                 </div>
             </div>
 
+        </div>
+
+        <div id="issueModal"
+            class="fixed inset-0 bg-black/50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+            <div
+                class="bg-white rounded-2xl w-11/12 md:w-4/5 lg:w-3/4 max-w-4xl shadow-lg p-8 relative transform scale-95 transition-transform duration-300">
+
+                <div id="modalContent">
+                </div>
+
+            </div>
         </div>
 
         <script src="./script/issues.js"></script>
