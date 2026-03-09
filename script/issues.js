@@ -1,3 +1,7 @@
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "index.html";
+}
+
 const issuesContainer = document.getElementById("issuesContainer");
 const issueCount = document.getElementById("issueCount");
 
@@ -82,7 +86,6 @@ function displayIssues(issues) {
             </div>
         `;
 
-        // Add click listener to open modal
         card.addEventListener("click", () => openIssueModal(issue));
 
         issuesContainer.appendChild(card);
