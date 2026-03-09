@@ -5,12 +5,15 @@ let allIssues = [];
 
 const overlay = document.getElementById("loadingOverlay");
 
+
 function showLoading() {
-    overlay.classList.remove("opacity-0", "pointer-events-none");
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
 }
 
 function hideLoading() {
-    overlay.classList.add("opacity-0", "pointer-events-none");
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
 }
 
 async function loadIssues() {
