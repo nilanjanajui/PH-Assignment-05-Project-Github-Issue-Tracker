@@ -24,4 +24,4 @@
 
 ### 5. What are template literals?
 **Answer:** <br>
-**Template literals** - Strings wrapped in backticks (```) that support variable interpolation with `${...}` and multi-line text without special characters.
+**Template literals** - Strings wrapped in backticks ```(`)``` that support variable interpolation with `${...}` and multi-line text without special characters.
