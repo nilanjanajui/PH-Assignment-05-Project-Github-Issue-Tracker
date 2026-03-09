@@ -138,16 +138,16 @@ function setActiveTab(activeTab) {
 
         const tab = document.getElementById(id);
 
-        tab.classList.remove("bg-[#4A00FF]", "text-white", "border");
-        tab.classList.add("bg-gray-200", "text-gray-700");
+        tab.classList.remove("bg-[#4A00FF]", "text-white", "hover:bg-[#3a00cc]", "cursor-pointer");
+        tab.classList.add("bg-gray-200", "text-gray-700", "hover:bg-gray-300", "cursor-pointer");
 
     });
 
     const selected = document.getElementById(activeTab);
 
-    selected.classList.remove("bg-gray-200", "text-gray-700", "border");
+    selected.classList.remove("bg-gray-200", "text-gray-700", "hover:bg-gray-300", "cursor-pointer");
 
-    selected.classList.add("bg-[#4A00FF]", "text-white");
+    selected.classList.add("bg-[#4A00FF]", "text-white", "hover:bg-[#3a00cc]", "cursor-pointer");
 
 }
 
