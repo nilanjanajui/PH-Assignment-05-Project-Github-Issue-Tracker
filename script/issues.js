@@ -219,7 +219,7 @@ function openIssueModal(issue) {
             : "bg-gray-500 text-white";
 
     modalContent.innerHTML = `
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">${issue.title}</h2>
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">${issue.title}</h2>
 
         <div class="flex items-center gap-2 text-sm text-gray-500 mb-6 flex-wrap">
             <span class="px-3 py-1 rounded-full text-xs font-medium ${statusClass}">${issue.status.toUpperCase()}</span>
@@ -233,12 +233,12 @@ function openIssueModal(issue) {
             ${issue.labels.map(getLabelBadge).join("")}
         </div>
 
-        <p class="text-2xl text-slate-600 mb-8">${issue.description}</p>
+        <p class="text-lg md:text-2xl text-slate-600 mb-8">${issue.description}</p>
 
         <div class="bg-gray-100 rounded-xl p-5 mb-8 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
                 <p class="text-gray-500 mb-1">Assignee:</p>
-                <p class="text-2xl font-semibold text-gray-800">${issue.author}</p>
+                <p class="text-xl md:text-2xl font-semibold text-gray-800">${issue.author}</p>
             </div>
 
             <div>
@@ -247,9 +247,9 @@ function openIssueModal(issue) {
             </div>
         </div>
 
-        <div class="flex justify-end">
+        <div class="flex justify-stretch sm:justify-end">
             <button id="modalCloseAction"
-                class="bg-[#4A00FF] hover:bg-[#3a00cc] text-white px-8 py-3 rounded-md transition-colors cursor-pointer">
+                class="bg-[#4A00FF] hover:bg-[#3a00cc] text-white px-8 py-3 rounded-md transition-colors cursor-pointer w-full sm:w-auto">
                 Close
             </button>
         </div>
