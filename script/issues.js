@@ -70,7 +70,7 @@ function displayIssues(issues) {
             <div class="p-4">
                 <div class="flex justify-between items-center mb-3">
                     <img src="${statusIcon}" class="w-5 h-5">
-                    <span class="text-xs px-3 py-1 rounded-full ${priorityColor}">${issue.priority}</span>
+                    <span class="text-xs px-3 py-1 rounded-full ${priorityColor}">${issue.priority.toUpperCase()}</span>
                 </div>
                 <h3 class="font-semibold text-gray-800 mb-2">${issue.title}</h3>
                 <p class="text-sm text-gray-500 mb-4">${issue.description}</p>
@@ -222,7 +222,7 @@ function openIssueModal(issue) {
         <h2 class="text-4xl font-bold text-gray-800 mb-4">${issue.title}</h2>
 
         <div class="flex items-center gap-2 text-sm text-gray-500 mb-6 flex-wrap">
-            <span class="px-3 py-1 rounded-full text-xs font-medium ${statusClass}">${issue.status}</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium ${statusClass}">${issue.status.toUpperCase()}</span>
             <span>&bull;</span>
             <span>Opened by ${issue.author}</span>
             <span>&bull;</span>
@@ -243,7 +243,7 @@ function openIssueModal(issue) {
 
             <div>
                 <p class="text-gray-500 mb-1">Priority:</p>
-                <span class="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase ${priorityClass}">${issue.priority}</span>
+                <span class="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase ${priorityClass}">${issue.priority.toUpperCase()}</span>
             </div>
         </div>
 
